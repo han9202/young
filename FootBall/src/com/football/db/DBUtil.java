@@ -1,4 +1,4 @@
-package com.test.db;
+package com.football.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
