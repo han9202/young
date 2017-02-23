@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,18 +31,7 @@ $(document).ready(function(){
 
 	<div id="main">
 		<%@include file="/inc/top.jsp" %>
-		
-			<div id="middle">
-			<div class="mainImg">
-				<img src="images/main2.gif">
-			</div>
-			
-			<div id="hotSay">
-				
-			</div>
-			
-			</div>
-		
+		<div id="middle"></div>
 		<%@include file="/inc/bottom.jsp" %>
 	</div>
 
