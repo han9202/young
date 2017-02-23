@@ -16,6 +16,11 @@
 	float : right;
 }
 
+#top #mainImage{
+	position: absolute;
+	left : 0px;
+	top : 50px;
+}
 #top #auth{
 	border : 1px solid black;
 	width : 200px;
