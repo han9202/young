@@ -4,9 +4,45 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>FootBall</title>
+
+<%@include file="/inc/asset.jsp" %>
+
+<!-- 캐시 자동 삭제 -->
+<meta http-equiv="Cache-Control" content="no-cache"/> 
+<meta http-equiv="Expires" content="0"/> 
+<meta http-equiv="Pragma" content="no-cache"/>
+
+
+<style>
+
+</style>
+
+<script>
+$(document).ready(function(){
+	
+});
+</script>
+
 </head>
 <body>
+
+	<div id="main">
+		<%@include file="/inc/top.jsp" %>
+		
+			<div id="middle">
+			<div class="mainImg">
+				<img src="images/main2.gif">
+			</div>
+			
+			<div id="hotSay">
+				
+			</div>
+			
+			</div>
+		
+		<%@include file="/inc/bottom.jsp" %>
+	</div>
 
 </body>
 </html>
