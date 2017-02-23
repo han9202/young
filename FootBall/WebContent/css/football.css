@@ -24,14 +24,16 @@
 #top #mainImage{
 	border : 0px solid black;
 	width : 260px;
-	height: 80px;
+	height: 70px;
 	float: left;
+	margin-top: 10px;
 	
 }
 #top #mainImage img{
 	border : 0px solid black;
 	width : 260px;
-	height: 80px;
+	height: 70px;
+	cursor: pointer;
 	
 }
 #top #auth{
@@ -46,6 +48,7 @@
 	width : 70px;
 	height : 30px;
 	float: right;
+	margin-top: 10px;
 	
 }
 
@@ -67,7 +70,27 @@
 
 
 #middle{
-	min-height: 700px;
+	margin: 20px 0px;
+	width: 100%;
+	height: 700px;
+}
+
+#middle .mainImg{
+	border: 1px solid white;
+	width: 100%;
+	height: 500px;
+}
+
+#middle .mainImg img{
+	width: 100%;
+	height: 500px;
+}
+
+#middle #hotSay{
+	margin: 20px auto;
+	border: 1px solid black;
+	width: 800px;
+	height: 200px;
 }
 
 #bottom{

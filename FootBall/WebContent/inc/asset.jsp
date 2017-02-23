@@ -9,4 +9,4 @@
 
 <!-- User -->
 <link rel="stylesheet" href="/FootBall/css/football.css" />
-<script src="/FootBall/js/board.js"></script></html>
+<script src="/FootBall/js/football.js"></script></html>
