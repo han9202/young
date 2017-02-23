@@ -9,25 +9,19 @@
 	width : 100%;
 	height: 50px;
 	border : 1px solid #999;
-	border-top : 0px;
 }
 
-#top ul{
-	margin : 0px;
-	padding: 0px;
+#top #auth{
+	border : 1px solid black;
+	width : 1000px;
+	height: 50px;
 }
 
-#top li:nth-child(1){
-	border-left : 0px;
-}
-#top li{
-	border-left : 1px dashed #999;
+#top #auth .loginForm{
+	border : 1px solid black;
+	width : 50px;
 	float: left;
-	list-style-type: none;
-	width : 20%;
-	text-align: center;
-	padding: 10px;
-	margin-top: 5px;
+	
 }
 
 #titleBanner{
