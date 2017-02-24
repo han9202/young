@@ -15,13 +15,16 @@ public class ClubDAO {
 		conn = DBUtil.open();
 	}
 	
-	public ArrayList<ClubDTO> list() {
+	public ArrayList<ClubDTO> list(SearchDTO sdto) {
 
 		try {
 
-			String sql = "select c.seq,EMBLEM,c.NAME,u.USERNAME,minage,maxage,maxusers,c.POINT,d.DOSI,a.SIGU,cl.CLUBLEVEL, (select count(*) from tblclub subc inner join tbluser u on u.CLUB_SEQ = subc.SEQ where c.seq = u.club_seq group by u.CLUB_SEQ) as nowcount from tblclub c inner join tbluser u on u.CLUB_SEQ = c.SEQ inner join tblarea a on a.SEQ = c.AREA_SEQ  inner join tbldosi d on d.SEQ = a.DOSI_SEQ inner join tblclublevel cl    on cl.SEQ = c.CLUBLEVEL_SEQ where userlevel_seq = 2";
+			String sql = "select * from (select Z.*,rownum as rnum from (select c.seq,EMBLEM,c.NAME,u.USERNAME,minage,maxage,maxusers,c.POINT,d.DOSI,a.SIGU,cl.CLUBLEVEL, u.USERLEVEL_SEQ,(select count(*) from tblclub subc inner join tbluser u on u.CLUB_SEQ = subc.SEQ where c.seq = u.club_seq group by u.CLUB_SEQ) as nowcount from tblclub c inner join tbluser u on u.CLUB_SEQ = c.SEQ inner join tblarea a on a.SEQ = c.AREA_SEQ  inner join tbldosi d on d.SEQ = a.DOSI_SEQ inner join tblclublevel cl on cl.SEQ = c.CLUBLEVEL_SEQ where userlevel_seq = 2) z) where RNUM >= ? AND RNUM <= ?";
 			
 			PreparedStatement stat = conn.prepareStatement(sql);
+			
+			stat.setInt(1, sdto.getStart());
+			stat.setInt(2, sdto.getEnd());
 			
 			ResultSet rs = stat.executeQuery();
 			

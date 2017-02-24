@@ -9,4 +9,122 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-</web-app>
+
+
+<!-- 템플릿페이지 -->
+
+
+<!-- FootballMain -->  
+   <servlet>
+     <servlet-name>FootballMain</servlet-name>
+     <servlet-class>com.football.main.FootballMain</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FootballMain</servlet-name>
+     <url-pattern>/footballmain.do</url-pattern>
+  </servlet-mapping>
+  
+  <!--회원가입 -->
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+  	<servlet-class>com.football.register.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/register/register.do</url-pattern>
+  </servlet-mapping>
+  
+    <!-- 로그인 -->
+  <servlet>
+     <servlet-name>Login</servlet-name>
+     <servlet-class>com.football.member.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>Login</servlet-name>
+     <url-pattern>/member/login.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 로그인 처리 -->
+  <servlet>
+     <servlet-name>LoginOk</servlet-name>
+     <servlet-class>com.football.member.LoginOk</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>LoginOk</servlet-name>
+     <url-pattern>/member/loginok.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 클럽 메인(검색) -->
+  <servlet>
+     <servlet-name>ClubSearch</servlet-name>
+     <servlet-class>com.football.club.ClubSearch</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>ClubSearch</servlet-name>
+     <url-pattern>/club/clubsearch.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 대회 메인(대회리스트) -->
+  <servlet>
+     <servlet-name>MatchList</servlet-name>
+     <servlet-class>com.football.match.MatchList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>MatchList</servlet-name>
+     <url-pattern>/match/matchlist.do</url-pattern>
+  </servlet-mapping>
+
+  <!-- 프리스타일 -->
+  <servlet>
+     <servlet-name>FreeStyle</servlet-name>
+     <servlet-class>com.football.freestyle.FreeStyle</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FreeStyle</servlet-name>
+     <url-pattern>/freestyle/freestyle.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 공지사항메인(리스트) -->
+  <servlet>
+     <servlet-name>NoticeList</servlet-name>
+     <servlet-class>com.football.board.NoticeList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>NoticeList</servlet-name>
+     <url-pattern>/board/noticelist.do</url-pattern>
+  </servlet-mapping>
+  
+    <!-- 건의사항메인(리스트) -->
+  <servlet>
+     <servlet-name>ProposalList</servlet-name>
+     <servlet-class>com.football.board.ProposalList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>ProposalList</servlet-name>
+     <url-pattern>/board/proposallist.do</url-pattern>
+  </servlet-mapping>
+
+
+    <!-- 자유게시판 메인(리스트) -->
+  <servlet>
+     <servlet-name>FreeList</servlet-name>
+     <servlet-class>com.football.board.FreeList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>FreeList</servlet-name>
+     <url-pattern>/board/freelist.do</url-pattern>
+  </servlet-mapping>
+  
+
+      <!-- 포토갤러리 메인(리스트) -->
+  <servlet>
+     <servlet-name>GalleyList</servlet-name>
+     <servlet-class>com.football.board.GalleyList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>GalleyList</servlet-name>
+     <url-pattern>/board/galleylist.do</url-pattern>
+  </servlet-mapping>
+  </web-app>

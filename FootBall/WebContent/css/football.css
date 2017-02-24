@@ -4,24 +4,51 @@
 	width : 100%;
 	margin: 0px auto;
 }
+/* ----------------------------------------------------main-----------------------------*/
 
 #top{
+	width : 100%;
+	height: 85px;
+	border-bottom : 2px solid #999;
+	
+}
+
+#top #topContent{
 	width : 1000px;
 	height: 85px;
-	border-bottom : 1px solid #999;
+	margin: 0px auto;
+	border: 0px solid red;
+}
+
+#top #topContent #topRight{
+	width : 730px;
+	height: 85px;
+	border-bottom : 0px solid #999;
 	margin: 0px auto;
 	
 }
-#top #topRight{
+#top #topContent #topRight{
 	width : 730px;
 	height: 80px;
 }
 
-#top div{
+#top #topContent div{
 	float: left;
 }
 
 #top #mainImage{
+	border : 0px solid black;
+	width : 260px;
+	height: 80px;
+	float: left;
+	
+}
+
+#top #mainImage img{
+	border : 0px solid black;
+	width : 260px;
+	height: 80px;
+	
 	border : 0px solid black;
 	width : 260px;
 	height: 70px;
@@ -67,12 +94,11 @@
 	float: left;
 	padding-top: 20px;
 }
-
+/* ----------------------------------------------------TOP-----------------------------*/
 
 #middle{
-	margin: 20px 0px;
+	margin: 30px 0px;
 	width: 100%;
-	height: 700px;
 }
 
 #middle .mainImg{
@@ -86,16 +112,51 @@
 	height: 500px;
 }
 
-#middle #hotSay{
-	margin: 20px auto;
+#middle #hotCount{
+	margin: 50px auto;
 	border: 1px solid black;
-	width: 800px;
+	background-image:url("../images/main4.png");
+	width: 100%;
 	height: 200px;
 }
+
+#middle #hotCount .countBox{
+	border: 0px solid red;
+	margin: 50px auto;
+	width: 1000px;
+	height: 110px; 
+}
+
+#middle #hotCount .countBox .userCount,#middle #hotCount .countBox .clubCount,#middle #hotCount .countBox .fsCount,#middle #hotCount .countBox .matchCount{
+	border: 1px solid #999;
+	width: 200px;
+	height: 110px;
+	float: left;
+	margin-left: 30px;
+	color: white;
+	text-align: center;
+}
+
+.userCount .counter, .clubCount .counter, .fsCount .counter, .matchCount .counter{
+	margin-top: 30px;
+	font-size: 35px;
+}
+
+.userCount h4, .clubCount h4, .fsCount h4, .matchCount h4{
+	color: #999;
+}
+
+.userCount div, .clubCount div, .fsCount div, .matchCount div{
+	margin-top: 10px;
+}
+
+
+/* ----------------------------------------------------middle-----------------------------*/
 
 #bottom{
 	width: 100%;
 	height: 300px;
+	margin-top: 150px;
 	background-color: #252525;
 	color: white;
 }
@@ -117,7 +178,16 @@
 #bottom .copyright1 .copyright2 p{
 	margin: 20px 10px;
 }
+/* --------------------------------------------------bottom-------------------------------*/
+
+
+#tbl{
+	
+	width: 1000px;
+	margin: 30px auto;
+	text-align: center;
+}
 
 
 
-
+/* --------------------------------------------------테이블-------------------------------*/

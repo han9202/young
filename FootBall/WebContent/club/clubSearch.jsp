@@ -29,7 +29,7 @@
 	width : 1000px;
 	height : 50px;
 	margin: 20px auto;
-	border : 1px solid black;
+	border : 0px solid black;
 }
 
 .search{
@@ -52,7 +52,7 @@
 	width : 1000px;
 	height : 50px;
 	margin: 20px auto;
-	border : 1px solid black;
+	border : 0px solid black;
 }
 
 #nameSearchcontent{
@@ -64,6 +64,20 @@
 	width : 300px;
 	display: inline-block;
 }
+#tbl th{text-align: center;}
+#tbl td{text-align: center; vertical-align: middle;}
+#tbl {text-align: center; height: 600px;}
+#tbl th:nth-child(1),#tbl td:nth-child(1){width : 50px;}
+#tbl th:nth-child(2),#tbl td:nth-child(2){width : 60px;}
+#tbl th:nth-child(3),#tbl td:nth-child(3){width : 200px;}
+#tbl th:nth-child(4),#tbl td:nth-child(4){width : 100px;}
+#tbl th:nth-child(5),#tbl td:nth-child(5){width : 80px;}
+#tbl th:nth-child(6),#tbl td:nth-child(6){width : 80px;}
+#tbl th:nth-child(7),#tbl td:nth-child(7){width : 80px;}
+#tbl th:nth-child(8),#tbl td:nth-child(8){width : 100px;}
+#tbl th:nth-child(9),#tbl td:nth-child(9){width : 150px;}
+#tbl th:nth-child(10),#tbl td:nth-child(10){width : 100px;}
+
 
 </style>
 
@@ -140,7 +154,7 @@ function movepage2() {
 				<c:forEach items="${list}" var="dto">
 				<tr>
 					<td>${dto.seq}</td>			
-					<td>${dto.emblem}</td>
+					<td><img src="../images/emblem.png" style="width : 30px;"><%-- ${dto.emblem} --%></td>
 					<td>${dto.name}</td>
 					<td>${dto.username}</td>
 					<td>${dto.minage}</td>
@@ -148,7 +162,7 @@ function movepage2() {
 					<td>${dto.nowcount}/${dto.maxusers}</td>
 					<td>${dto.clublevel}</td>
 					<td>${dto.dosi} ${dto.sigu}</td>
-					<td><input type="button"></td>
+					<td><input type="button" value="가입신청" class="btn btn-primary"></td>
 				</tr>
 				</c:forEach>	
 				
@@ -158,8 +172,8 @@ function movepage2() {
 				<div id="nameSearchcontent">
 					<select class="search2 form-control">
 						<option>검색종류2</option>
-						<option>등급별</option>
-						<option>지역별</option>
+						<option>클럽명</option>
+						<option>클럽장명</option>
 					</select>
 					<input type="text" class="searchInput form-control">
 					<button id="searchBtn2" class="btn btn-primary">검색</button>

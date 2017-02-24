@@ -18,7 +18,7 @@ public class ClubSearch extends HttpServlet{
 			//페이징 -> 게시판의 꽃
 			int nowpage = 0;			//현재 페이지 번호
 			int totalCount = 0;			//총 게시물 수
-			int pageSize = 20;			//한페이지에 보여줄 게시물 수
+			int pageSize = 10;			//한페이지에 보여줄 게시물 수
 			int totalPage = 0;			//총 몇페이지
 			int start = 0, end = 0;		//RNUM 조건에 사용될 범위 지정값
 			
@@ -69,7 +69,7 @@ public class ClubSearch extends HttpServlet{
 			//클럽리스트 가져오기
 			
 
-			ArrayList<ClubDTO> list = dao.list();
+			ArrayList<ClubDTO> list = dao.list(sdto);
 			
 			
 			//페이지바 만들기
