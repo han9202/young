@@ -57,55 +57,59 @@ $(function(){
 
 
 </script>
+
 <div id="top">
-	<div id="mainImage">
-		<a href="#"><img src="images/logo.png"></a>
-	</div>
-	<div id="topRight">
-		<div id="auth">
-			<div class="loginForm">
-				<a href="#">회원가입</a>
-			</div>
-			<div class="loginForm">
-				<a href="#">로그인</a>
-			</div>
+	<div id="topContent">
+		<div id="mainImage">
+			<a href="/FootBall/footballmain.do"><img src="/FootBall/images/logo.png"></a>
 		</div>
-		
-		<div id="topMenu">
-			<div class="menuLink" id="sideMenu1">
-				<span><a href="#">클럽</a></span>
-				<div id="sideDiv1">
-					<div class="sideList">클럽검색</div>
-					<div class="sideList">클럽생성</div>
-					<div class="sideList">My클럽</div>
-					<div class="sideList">클럽랭킹</div>
+		<div id="topRight">
+			<div id="auth">
+				<div class="loginForm">
+					<a href="/FootBall/register/register.do">회원가입</a>
 				</div>
-			</div>
-			<div class="menuLink" id="sideMenu2">
-				<span><a href="#">대회</a></span>
-				<div id="sideDiv2">
-					<div class="sideList">대회리스트</div>
-					<div class="sideList">대회신청</div>
-					<div class="sideList">대회결과</div>
+				<div class="loginForm">
+					<a href="/FootBall/member/login.do">로그인</a>
 				</div>
-			</div>
-			<div class="menuLink">
-				<span><a href="#">프리스타일</a></span>
-			</div>
-			<div class="menuLink">
-				<span><a href="#">공지사항</a></span>
-			</div>
-			<div class="menuLink">
-				<span><a href="#">건의사항</a></span>
-			</div>
-			<div class="menuLink">
-				<span><a href="#">자유게시판</a></span>
-			</div>
-			<div class="menuLink">
-				<span><a href="#">포토갤러리</a></span>
+			</div>		
+			<div id="topMenu">
+				<div class="menuLink" id="sideMenu1">
+					<span><a href="/FootBall/club/clubsearch.do">클럽</a></span>
+					<div id="sideDiv1">
+						<div class="sideList"><a href="/FootBall/club/clubsearch.do">클럽검색</a></div>
+						<div class="sideList"><a href="/FootBall/club/clubadd.do">클럽생성</a></div>
+						<div class="sideList"><a href="/FootBall/club/myclub.do">My클럽</a></div>
+						<div class="sideList"><a href="/FootBall/club/clubrank.do">클럽랭킹</a></div>
+					</div>
+				</div>
+				<div class="menuLink" id="sideMenu2">
+					<span><a href="/FootBall/match/matchlist.do">대회</a></span>
+					<div id="sideDiv2">
+						<div class="sideList"><a href="/FootBall/match/matchlist.do">대회리스트</a></div>
+						<div class="sideList"><a href="/FootBall/match/matchapply.do">대회신청</a></div>
+						<div class="sideList"><a href="/FootBall/match/matchresult.do">대회결과</a></div>
+					</div>
+				</div>
+				<div class="menuLink">
+					<span><a href="/FootBall/freestyle/list.do">프리스타일</a></span>
+				</div>
+				<div class="menuLink">
+					<span><a href="/FootBall/board/nocticelist.do">공지사항</a></span>
+				</div>
+				<div class="menuLink">
+					<span><a href="/FootBall/board/proposallist.do">건의사항</a></span>
+				</div>
+				<div class="menuLink">
+					<span><a href="/FootBall/board/freelist.do">자유게시판</a></span>
+				</div>
+				<div class="menuLink">
+					<span><a href="/FootBall/board/galleylist.do">포토갤러리</a></span>
+				</div>
 			</div>
 		</div>
 	</div>
 	
+	
 
 </div>
+	

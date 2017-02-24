@@ -12,7 +12,7 @@ public class Templete extends HttpServlet{
 		@Override
 		protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			
-			RequestDispatcher dispatcher = request.getRequestDispatcher("");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/board/freelist.jsp");
 			dispatcher.forward(request, response);
 			
 		}
